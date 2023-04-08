@@ -7,7 +7,7 @@ public class BorderWrap {
         self.maxWidth = maxWidth
     }
     
-    func wrapBorder(around strings: String...) -> String {
+    public func wrapBorder(around strings: String...) -> String {
         let maxLength = calculateBoxWidth(of: strings)
         let topBorder = generateBorder(characters: "─", corner1: "┌", corner2: "┐", length: maxLength)
         let bottomBorder = generateBorder(characters: "─", corner1: "└", corner2: "┘", length: maxLength)
